@@ -1,15 +1,15 @@
 ﻿<?php
 include 'ini.php';
-session_start();
 
 
 # Paso 3: Ejecutar el comando SQL
-$resultado = $db->query("SELECT * FROM chocotejas");
+$cod_teja = intval($_GET['cod']);
+$resultado = $db->query("SELECT * FROM chocotejas WHERE codigo = $cod_teja");
 ?>
 <!doctype html>
 <html>
 	<head>
-		<title>Página principal - happytejas</title>
+		<title>Happytejas</title>
 		<link rel="stylesheet" href="estilos/happytejas.css" />
 	</head>
 	<body>
@@ -20,16 +20,17 @@ $resultado = $db->query("SELECT * FROM chocotejas");
 			<?php
 			# Paso 4: Iterar la variable $resultado
 			foreach($resultado as $fila) {
-			?>			
-			<a href="teja.php?cod=<?php echo $fila['codigo'] ?>">
-				<div class="item">
+			?>					
+				<div>
 					<h2><?php echo $fila['nombre'] ?></h2>
-					<img src="<?php echo $fila['foto'] ?>" height="200" />
+					<img src="<?php echo $fila['foto'] ?>" />
+					<p><?php echo utf8_encode($fila['descripcion']) ?></p>
 				</div>
-			</a>		
+					
 			<?php } ?>
-			
 		</section>
+		
+		<a href="index.php">Regresar</a>
 		
 		<?php include 'plantillas/pie.php' ?>
 	</body>

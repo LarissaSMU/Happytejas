@@ -1,7 +1,7 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 	<head>
-		<title>Registro de usuario - happytejas</title>
+		<title>Resultado de la compra - happytejas</title>
 		<link rel="stylesheet" href="estilos/happytejas.css" />
 	</head>
 	<body>
@@ -9,9 +9,9 @@
 		<?php include 'plantillas/menu.php' ?>
 		
 		<section>
-			<h2>Cuenta creada satisfactoriamente</h2>
+			<h2>El pedido se realizo exitosamente</h2>
 			
-			<a href="login.php">Clic aquí para iniciar sesión</a>
+			
 			
 		</section>
 		

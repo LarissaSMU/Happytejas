@@ -1,3 +1,3 @@
 <footer>
-	&copy; <?php echo date("Y") ?> Mauricio Caceres - Happytejas
+	&copy; <?php echo date("d-M-Y") ?> Mauricio Caceres - Happytejas
 </footer>

@@ -1,10 +1,15 @@
+/**{
+	background-color: #FFB6C1;
+}*/
 body {
 	font-family: arial; margin: 0;
 }
-h1 {
-	font-size: 40px; padding: 10px; text-align: center;	
+header {
+	background-image: url(https://ussa4g.by3302.livefilestore.com/y3m7OGad2QN10Skkaa_gX-P_D-8GlQfgwth-zqNcRw8cCIPT4UanO6-vgUsWucxsVLBLMNAHqnOo8RHU_elLqktFfKo2x1rYbY90wRJhw3avsHFxAwdjaHUWGKa-DLcRMJLvcDURDwt9sMN0bVX2gMloED1HlitNC3LS8-Vq6MTcGE?width=256&height=256&cropmode=none);
+	font-size: 150px; padding: 10px; text-align: center;	
 	margin: 0;
 }
+
 nav {
 	background-color: #BDA469; padding: 20px;
 }

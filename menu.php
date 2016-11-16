@@ -1,7 +1,7 @@
 ﻿<nav>
 	<ul>
 		<li><a href="index.php">Principal</a></li>
-		<li><a href="registrar_tejas.php">Registrar tejas</a></li>
+		<li><a href="comprar_tejas.php">Comprar tejas</a></li>
 		
 		<?php if (isset($_SESSION['autenticado'])) { ?>
 		
